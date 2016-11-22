@@ -8,7 +8,7 @@
 // 也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。例如，如果输入长度为7的数组{2, 3, 1, 0, 2, 5, 3}，
 // 那么对应的输出是重复的数字2或者3。
 
-#include <stdio.h>
+#include <cstdio>
 
 // 参数:
 //        numbers:     一个整数数组
@@ -19,10 +19,8 @@
 //        false - 输入无效，或者数组中没有重复的数字
 bool duplicate(int numbers[], int length, int* duplication)
 {
-	if (numbers == NULL || length <= 0)
-	{
+	if (numbers == nullptr || length <= 0)
 		return false;
-	}
 
 	for (int i = 0; i < length; ++i)
 	{
@@ -74,27 +72,19 @@ void test(char* testName, int numbers[], int lengthNumbers, int expected[], int 
 		if (validArgument)
 		{
 			if (contains(expected, expectedExpected, duplication))
-			{
 				printf("Passed.\n");
-			}
 			else
-			{
 				printf("FAILED.\n");
-			}
 		}
 		else
-		{
 			printf("Passed.\n");
-		}
 	}
 	else
-	{
 		printf("FAILED.\n");
-	}
 }
 
 // 重复的数字是数组中最小的数字
-static void test1()
+void test1()
 {
 	int numbers[] = { 2, 1, 3, 1, 4 };
 	int duplications[] = { 1 };
@@ -102,7 +92,7 @@ static void test1()
 }
 
 // 重复的数字是数组中最大的数字
-static void test2()
+void test2()
 {
 	int numbers[] = { 2, 4, 3, 1, 4 };
 	int duplications[] = { 4 };
@@ -110,7 +100,7 @@ static void test2()
 }
 
 // 数组中存在多个重复的数字
-static void test3()
+void test3()
 {
 	int numbers[] = { 2, 4, 2, 1, 4 };
 	int duplications[] = { 2, 4 };
@@ -118,7 +108,7 @@ static void test3()
 }
 
 // 没有重复的数字
-static void test4()
+void test4()
 {
 	int numbers[] = { 2, 1, 3, 0, 4 };
 	int duplications[] = { -1 }; // not in use in the test function
@@ -126,11 +116,19 @@ static void test4()
 }
 
 // 没有重复的数字
-static void test5()
+void test5()
 {
 	int numbers[] = { 2, 1, 3, 5, 4 };
 	int duplications[] = { -1 }; // not in use in the test function
 	test("Test5", numbers, sizeof(numbers) / sizeof(int), duplications, sizeof(duplications) / sizeof(int), false);
+}
+
+// 无效的输入
+void test6()
+{
+	int* numbers = nullptr;
+	int duplications[] = { -1 }; // not in use in the test function
+	test("Test6", numbers, 0, duplications, sizeof(duplications) / sizeof(int), false);
 }
 
 void main()
@@ -140,4 +138,5 @@ void main()
 	test3();
 	test4();
 	test5();
+	test6();
 }
