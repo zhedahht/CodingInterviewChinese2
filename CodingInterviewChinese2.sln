@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_02_DuplicationInArrayNoE
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_FindInPartiallySortedMatrix", "04_FindInPartiallySortedMatrix\04_FindInPartiallySortedMatrix.vcxproj", "{C315DEC3-DEE7-485A-B3AF-C193138EEC8B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_ReplaceSpaces", "05_ReplaceSpaces\05_ReplaceSpaces.vcxproj", "{535226A6-C2A6-4F15-94A0-AEC6FF07FD4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,16 @@ Global
 		{C315DEC3-DEE7-485A-B3AF-C193138EEC8B}.Release|x64.Build.0 = Release|x64
 		{C315DEC3-DEE7-485A-B3AF-C193138EEC8B}.Release|x86.ActiveCfg = Release|Win32
 		{C315DEC3-DEE7-485A-B3AF-C193138EEC8B}.Release|x86.Build.0 = Release|Win32
+		{535226A6-C2A6-4F15-94A0-AEC6FF07FD4C}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{535226A6-C2A6-4F15-94A0-AEC6FF07FD4C}.Debug|x64.ActiveCfg = Debug|x64
+		{535226A6-C2A6-4F15-94A0-AEC6FF07FD4C}.Debug|x64.Build.0 = Debug|x64
+		{535226A6-C2A6-4F15-94A0-AEC6FF07FD4C}.Debug|x86.ActiveCfg = Debug|Win32
+		{535226A6-C2A6-4F15-94A0-AEC6FF07FD4C}.Debug|x86.Build.0 = Debug|Win32
+		{535226A6-C2A6-4F15-94A0-AEC6FF07FD4C}.Release|Any CPU.ActiveCfg = Release|Win32
+		{535226A6-C2A6-4F15-94A0-AEC6FF07FD4C}.Release|x64.ActiveCfg = Release|x64
+		{535226A6-C2A6-4F15-94A0-AEC6FF07FD4C}.Release|x64.Build.0 = Release|x64
+		{535226A6-C2A6-4F15-94A0-AEC6FF07FD4C}.Release|x86.ActiveCfg = Release|Win32
+		{535226A6-C2A6-4F15-94A0-AEC6FF07FD4C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
