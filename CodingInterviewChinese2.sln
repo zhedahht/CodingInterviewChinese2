@@ -26,6 +26,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07_ConstructBinaryTree", "0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08_NextNodeInBinaryTrees", "08_NextNodeInBinaryTrees\08_NextNodeInBinaryTrees.vcxproj", "{9E4279AC-9D4B-4B56-AA0F-77CF63ADA60C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_QueueWithTwoStacks", "09_QueueWithTwoStacks\09_QueueWithTwoStacks.vcxproj", "{FCD6D998-DFB6-46EA-BC54-1B57C3CF16C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -138,6 +140,16 @@ Global
 		{9E4279AC-9D4B-4B56-AA0F-77CF63ADA60C}.Release|x64.Build.0 = Release|x64
 		{9E4279AC-9D4B-4B56-AA0F-77CF63ADA60C}.Release|x86.ActiveCfg = Release|Win32
 		{9E4279AC-9D4B-4B56-AA0F-77CF63ADA60C}.Release|x86.Build.0 = Release|Win32
+		{FCD6D998-DFB6-46EA-BC54-1B57C3CF16C6}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{FCD6D998-DFB6-46EA-BC54-1B57C3CF16C6}.Debug|x64.ActiveCfg = Debug|x64
+		{FCD6D998-DFB6-46EA-BC54-1B57C3CF16C6}.Debug|x64.Build.0 = Debug|x64
+		{FCD6D998-DFB6-46EA-BC54-1B57C3CF16C6}.Debug|x86.ActiveCfg = Debug|Win32
+		{FCD6D998-DFB6-46EA-BC54-1B57C3CF16C6}.Debug|x86.Build.0 = Debug|Win32
+		{FCD6D998-DFB6-46EA-BC54-1B57C3CF16C6}.Release|Any CPU.ActiveCfg = Release|Win32
+		{FCD6D998-DFB6-46EA-BC54-1B57C3CF16C6}.Release|x64.ActiveCfg = Release|x64
+		{FCD6D998-DFB6-46EA-BC54-1B57C3CF16C6}.Release|x64.Build.0 = Release|x64
+		{FCD6D998-DFB6-46EA-BC54-1B57C3CF16C6}.Release|x86.ActiveCfg = Release|Win32
+		{FCD6D998-DFB6-46EA-BC54-1B57C3CF16C6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
