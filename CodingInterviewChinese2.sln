@@ -30,6 +30,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_QueueWithTwoStacks", "09
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_Fibonacci", "10_Fibonacci\10_Fibonacci.vcxproj", "{C168F24E-1E5B-4683-A6A0-28480961133F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_MinNumberInRotatedArray", "11_MinNumberInRotatedArray\11_MinNumberInRotatedArray.vcxproj", "{8EF515C8-1318-4440-9290-AB46E4639F1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -162,6 +164,16 @@ Global
 		{C168F24E-1E5B-4683-A6A0-28480961133F}.Release|x64.Build.0 = Release|x64
 		{C168F24E-1E5B-4683-A6A0-28480961133F}.Release|x86.ActiveCfg = Release|Win32
 		{C168F24E-1E5B-4683-A6A0-28480961133F}.Release|x86.Build.0 = Release|Win32
+		{8EF515C8-1318-4440-9290-AB46E4639F1A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{8EF515C8-1318-4440-9290-AB46E4639F1A}.Debug|x64.ActiveCfg = Debug|x64
+		{8EF515C8-1318-4440-9290-AB46E4639F1A}.Debug|x64.Build.0 = Debug|x64
+		{8EF515C8-1318-4440-9290-AB46E4639F1A}.Debug|x86.ActiveCfg = Debug|Win32
+		{8EF515C8-1318-4440-9290-AB46E4639F1A}.Debug|x86.Build.0 = Debug|Win32
+		{8EF515C8-1318-4440-9290-AB46E4639F1A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{8EF515C8-1318-4440-9290-AB46E4639F1A}.Release|x64.ActiveCfg = Release|x64
+		{8EF515C8-1318-4440-9290-AB46E4639F1A}.Release|x64.Build.0 = Release|x64
+		{8EF515C8-1318-4440-9290-AB46E4639F1A}.Release|x86.ActiveCfg = Release|Win32
+		{8EF515C8-1318-4440-9290-AB46E4639F1A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
