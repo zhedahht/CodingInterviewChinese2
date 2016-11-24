@@ -38,6 +38,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13_RobotMove", "13_RobotMov
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14_CuttingRope", "14_CuttingRope\14_CuttingRope.vcxproj", "{FF7ED3B0-5CE4-4D7B-954A-9EE93936D9A1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15_NumberOf1InBinary", "15_NumberOf1InBinary\15_NumberOf1InBinary.vcxproj", "{A9AF95C4-4FA9-4A7E-B005-005777651659}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -210,6 +212,16 @@ Global
 		{FF7ED3B0-5CE4-4D7B-954A-9EE93936D9A1}.Release|x64.Build.0 = Release|x64
 		{FF7ED3B0-5CE4-4D7B-954A-9EE93936D9A1}.Release|x86.ActiveCfg = Release|Win32
 		{FF7ED3B0-5CE4-4D7B-954A-9EE93936D9A1}.Release|x86.Build.0 = Release|Win32
+		{A9AF95C4-4FA9-4A7E-B005-005777651659}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A9AF95C4-4FA9-4A7E-B005-005777651659}.Debug|x64.ActiveCfg = Debug|x64
+		{A9AF95C4-4FA9-4A7E-B005-005777651659}.Debug|x64.Build.0 = Debug|x64
+		{A9AF95C4-4FA9-4A7E-B005-005777651659}.Debug|x86.ActiveCfg = Debug|Win32
+		{A9AF95C4-4FA9-4A7E-B005-005777651659}.Debug|x86.Build.0 = Debug|Win32
+		{A9AF95C4-4FA9-4A7E-B005-005777651659}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A9AF95C4-4FA9-4A7E-B005-005777651659}.Release|x64.ActiveCfg = Release|x64
+		{A9AF95C4-4FA9-4A7E-B005-005777651659}.Release|x64.Build.0 = Release|x64
+		{A9AF95C4-4FA9-4A7E-B005-005777651659}.Release|x86.ActiveCfg = Release|Win32
+		{A9AF95C4-4FA9-4A7E-B005-005777651659}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
