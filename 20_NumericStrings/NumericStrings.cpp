@@ -27,7 +27,7 @@ bool isNumeric(const char* str)
     {
         ++str;
 
-        // 下面一行代码用||的原因
+        // 下面一行代码用||的原因：
         // 1. 小数可以没有整数部分，例如.123等于0.123；
         // 2. 小数点后面可以没有数字，例如233.等于233.0；
         // 3. 当然小数点前面和后面可以有数字，例如233.666
@@ -38,6 +38,10 @@ bool isNumeric(const char* str)
     if(*str == 'e' || *str == 'E')
     {
         ++str;
+
+        // 下面一行代码用&&的原因：
+        // 1. 当e或E前面没有数字时，整个字符串不能表示数字，例如.e1、e1；
+        // 2. 当e或E后面没有整数时，整个字符串不能表示数字，例如12e、12e+5.4
         numeric = numeric && scanInteger(&str);
     }
 
@@ -97,7 +101,8 @@ int main(int argc, char* argv[])
     Test("Test15", "12e+5.4", false);
     Test("Test16", ".", false);
     Test("Test17", ".e1", false);
-    Test("Test18", "+.", false);
+    Test("Test18", "e1", false);
+    Test("Test19", "+.", false);
 
     return 0;
 }
