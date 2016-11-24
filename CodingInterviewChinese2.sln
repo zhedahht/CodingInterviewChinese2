@@ -60,6 +60,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "23_EntryNodeInListLoop", "2
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "24_ReverseList", "24_ReverseList\24_ReverseList.vcxproj", "{58FC36C7-E34D-402A-B028-6AD0D0D11FC3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25_MergeSortedLists", "25_MergeSortedLists\25_MergeSortedLists.vcxproj", "{55D7F9A4-14A2-40EE-9EAB-2A2D03D19EBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -342,6 +344,16 @@ Global
 		{58FC36C7-E34D-402A-B028-6AD0D0D11FC3}.Release|x64.Build.0 = Release|x64
 		{58FC36C7-E34D-402A-B028-6AD0D0D11FC3}.Release|x86.ActiveCfg = Release|Win32
 		{58FC36C7-E34D-402A-B028-6AD0D0D11FC3}.Release|x86.Build.0 = Release|Win32
+		{55D7F9A4-14A2-40EE-9EAB-2A2D03D19EBE}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{55D7F9A4-14A2-40EE-9EAB-2A2D03D19EBE}.Debug|x64.ActiveCfg = Debug|x64
+		{55D7F9A4-14A2-40EE-9EAB-2A2D03D19EBE}.Debug|x64.Build.0 = Debug|x64
+		{55D7F9A4-14A2-40EE-9EAB-2A2D03D19EBE}.Debug|x86.ActiveCfg = Debug|Win32
+		{55D7F9A4-14A2-40EE-9EAB-2A2D03D19EBE}.Debug|x86.Build.0 = Debug|Win32
+		{55D7F9A4-14A2-40EE-9EAB-2A2D03D19EBE}.Release|Any CPU.ActiveCfg = Release|Win32
+		{55D7F9A4-14A2-40EE-9EAB-2A2D03D19EBE}.Release|x64.ActiveCfg = Release|x64
+		{55D7F9A4-14A2-40EE-9EAB-2A2D03D19EBE}.Release|x64.Build.0 = Release|x64
+		{55D7F9A4-14A2-40EE-9EAB-2A2D03D19EBE}.Release|x86.ActiveCfg = Release|Win32
+		{55D7F9A4-14A2-40EE-9EAB-2A2D03D19EBE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
