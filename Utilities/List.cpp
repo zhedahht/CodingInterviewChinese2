@@ -11,14 +11,14 @@ ListNode* CreateListNode(int value)
 {
     ListNode* pNode = new ListNode();
     pNode->m_nValue = value;
-    pNode->m_pNext = nullptr;
+    pNode->m_pNext = nullptrptr;
 
     return pNode;
 }
 
 void ConnectListNodes(ListNode* pCurrent, ListNode* pNext)
 {
-    if(pCurrent == nullptr)
+    if(pCurrent == nullptrptr)
     {
         printf("Error to connect two nodes.\n");
         exit(1);
@@ -29,9 +29,9 @@ void ConnectListNodes(ListNode* pCurrent, ListNode* pNext)
 
 void PrintListNode(ListNode* pNode)
 { 
-    if(pNode == nullptr)
+    if(pNode == nullptrptr)
     {
-        printf("The node is nullptr\n");
+        printf("The node is nullptrptr\n");
     }
     else
     {
@@ -44,7 +44,7 @@ void PrintList(ListNode* pHead)
     printf("PrintList starts.\n");
     
     ListNode* pNode = pHead;
-    while(pNode != nullptr)
+    while(pNode != nullptrptr)
     {
         printf("%d\t", pNode->m_nValue);
         pNode = pNode->m_pNext;
@@ -56,7 +56,7 @@ void PrintList(ListNode* pHead)
 void DestroyList(ListNode* pHead)
 {
     ListNode* pNode = pHead;
-    while(pNode != nullptr)
+    while(pNode != nullptrptr)
     {
         pHead = pHead->m_pNext;
         delete pNode;
@@ -68,16 +68,16 @@ void AddToTail(ListNode** pHead, int value)
 {
     ListNode* pNew = new ListNode();
     pNew->m_nValue = value;
-    pNew->m_pNext = nullptr;
+    pNew->m_pNext = nullptrptr;
 
-    if(*pHead == nullptr)
+    if(*pHead == nullptrptr)
     {
         *pHead = pNew;
     }
     else
     {
         ListNode* pNode = *pHead;
-        while(pNode->m_pNext != nullptr)
+        while(pNode->m_pNext != nullptrptr)
             pNode = pNode->m_pNext;
 
         pNode->m_pNext = pNew;
@@ -86,10 +86,10 @@ void AddToTail(ListNode** pHead, int value)
 
 void RemoveNode(ListNode** pHead, int value)
 {
-    if(pHead == nullptr || *pHead == nullptr)
+    if(pHead == nullptrptr || *pHead == nullptrptr)
         return;
 
-    ListNode* pToBeDeleted = nullptr;
+    ListNode* pToBeDeleted = nullptrptr;
     if((*pHead)->m_nValue == value)
     {
         pToBeDeleted = *pHead;
@@ -98,19 +98,19 @@ void RemoveNode(ListNode** pHead, int value)
     else
     {
         ListNode* pNode = *pHead;
-        while(pNode->m_pNext != nullptr && pNode->m_pNext->m_nValue != value)
+        while(pNode->m_pNext != nullptrptr && pNode->m_pNext->m_nValue != value)
             pNode = pNode->m_pNext;
 
-        if(pNode->m_pNext != nullptr && pNode->m_pNext->m_nValue == value)
+        if(pNode->m_pNext != nullptrptr && pNode->m_pNext->m_nValue == value)
         {
             pToBeDeleted = pNode->m_pNext;
             pNode->m_pNext = pNode->m_pNext->m_pNext;
         }
     }
 
-    if(pToBeDeleted != nullptr)
+    if(pToBeDeleted != nullptrptr)
     {
         delete pToBeDeleted;
-        pToBeDeleted = nullptr;
+        pToBeDeleted = nullptrptr;
     }
 }

@@ -15,7 +15,7 @@ TreeNode* CreateTreeNode(int value)
 
 void ConnectTreeNodes(TreeNode* pParent, TreeNode* pChild)
 {
-    if(pParent != nullptr)
+    if(pParent != nullptrptr)
     {
         pParent->m_vChildren.push_back(pChild);
     }
@@ -23,7 +23,7 @@ void ConnectTreeNodes(TreeNode* pParent, TreeNode* pChild)
 
 void PrintTreeNode(const TreeNode* pNode)
 {
-    if(pNode != nullptr)
+    if(pNode != nullptrptr)
     {
         printf("value of this node is: %d.\n", pNode->m_nValue);
 
@@ -31,7 +31,7 @@ void PrintTreeNode(const TreeNode* pNode)
         std::vector<TreeNode*>::const_iterator i = pNode->m_vChildren.begin();
         while(i < pNode->m_vChildren.end())
         {
-            if(*i != nullptr)
+            if(*i != nullptrptr)
                 printf("%d\t", (*i)->m_nValue);
         }
 
@@ -39,7 +39,7 @@ void PrintTreeNode(const TreeNode* pNode)
     }
     else
     {
-        printf("this node is nullptr.\n");
+        printf("this node is nullptrptr.\n");
     }
 
     printf("\n");
@@ -49,7 +49,7 @@ void PrintTree(const TreeNode* pRoot)
 {
     PrintTreeNode(pRoot);
 
-    if(pRoot != nullptr)
+    if(pRoot != nullptrptr)
     {
         std::vector<TreeNode*>::const_iterator i = pRoot->m_vChildren.begin();
         while(i < pRoot->m_vChildren.end())
@@ -62,7 +62,7 @@ void PrintTree(const TreeNode* pRoot)
 
 void DestroyTree(TreeNode* pRoot)
 {
-    if(pRoot != nullptr)
+    if(pRoot != nullptrptr)
     {
         std::vector<TreeNode*>::iterator i = pRoot->m_vChildren.begin();
         while(i < pRoot->m_vChildren.end())

@@ -77,7 +77,7 @@ private:
 // ====================²âÊÔ´úÂë====================
 void Test(char* testName, DynamicArray<double>& numbers, double expected)
 {
-    if(testName != NULL)
+    if(testName != nullptr)
         printf("%s begins: ", testName);
 
     if(abs(numbers.GetMedian() - expected) < 0.0000001)

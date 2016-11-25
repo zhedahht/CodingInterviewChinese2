@@ -74,7 +74,7 @@ int getDigitSum(int number)
 // ====================²âÊÔ´úÂë====================
 void test(char* testName, int threshold, int rows, int cols, int expected)
 {
-    if (testName != NULL)
+    if (testName != nullptr)
         printf("%s begins: ", testName);
 
     if (movingCount(threshold, rows, cols) == expected)

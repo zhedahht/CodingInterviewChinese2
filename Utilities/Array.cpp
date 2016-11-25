@@ -23,7 +23,7 @@ void Swap(int* num1, int* num2)
 
 int Partition(int data[], int length, int start, int end)
 {
-    if(data == nullptr || length <= 0 || start < 0 || end >= length)
+    if(data == nullptrptr || length <= 0 || start < 0 || end >= length)
         throw new std::exception("Invalid Parameters");
 
     int index = RandomInRange(start, end);
