@@ -23,7 +23,7 @@ void ConnectTreeNodes(BinaryTreeNode* pParent, BinaryTreeNode* pLeft, BinaryTree
     }
 }
 
-void PrintTreeNode(BinaryTreeNode* pNode)
+void PrintTreeNode(const BinaryTreeNode* pNode)
 {
     if(pNode != nullptr)
     {
@@ -47,7 +47,7 @@ void PrintTreeNode(BinaryTreeNode* pNode)
     printf("\n");
 }
 
-void PrintTree(BinaryTreeNode* pRoot)
+void PrintTree(const BinaryTreeNode* pRoot)
 {
     PrintTreeNode(pRoot);
 

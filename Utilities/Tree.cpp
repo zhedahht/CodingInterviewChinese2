@@ -19,14 +19,14 @@ void ConnectTreeNodes(TreeNode* pParent, TreeNode* pChild)
     }
 }
 
-void PrintTreeNode(TreeNode* pNode)
+void PrintTreeNode(const TreeNode* pNode)
 {
     if(pNode != nullptr)
     {
         printf("value of this node is: %d.\n", pNode->m_nValue);
 
         printf("its children is as the following:\n");
-        std::vector<TreeNode*>::iterator i = pNode->m_vChildren.begin();
+        std::vector<TreeNode*>::const_iterator i = pNode->m_vChildren.begin();
         while(i < pNode->m_vChildren.end())
         {
             if(*i != nullptr)
@@ -43,13 +43,13 @@ void PrintTreeNode(TreeNode* pNode)
     printf("\n");
 }
 
-void PrintTree(TreeNode* pRoot)
+void PrintTree(const TreeNode* pRoot)
 {
     PrintTreeNode(pRoot);
 
     if(pRoot != nullptr)
     {
-        std::vector<TreeNode*>::iterator i = pRoot->m_vChildren.begin();
+        std::vector<TreeNode*>::const_iterator i = pRoot->m_vChildren.begin();
         while(i < pRoot->m_vChildren.end())
         {
             PrintTree(*i);
