@@ -1,8 +1,7 @@
-// Utilities.cpp : Defines the exported functions for the DLL application.
-//
-
+//==================================================================
 // 《剑指Offer——名企面试官精讲典型编程题》代码
 // 作者：何海涛
+//==================================================================
 
 #include "list.h"
 #include <stdio.h>
