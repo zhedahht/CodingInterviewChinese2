@@ -68,6 +68,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_MirrorOfBinaryTree", "27
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28_SymmetricalBinaryTree", "28_SymmetricalBinaryTree\28_SymmetricalBinaryTree.vcxproj", "{92CB1F9F-DB0F-4C9F-88EB-339E4B6A135E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29_PrintMatrix", "29_PrintMatrix\29_PrintMatrix.vcxproj", "{AEC239E0-E973-4139-93A4-399FFF2B35BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -390,6 +392,16 @@ Global
 		{92CB1F9F-DB0F-4C9F-88EB-339E4B6A135E}.Release|x64.Build.0 = Release|x64
 		{92CB1F9F-DB0F-4C9F-88EB-339E4B6A135E}.Release|x86.ActiveCfg = Release|Win32
 		{92CB1F9F-DB0F-4C9F-88EB-339E4B6A135E}.Release|x86.Build.0 = Release|Win32
+		{AEC239E0-E973-4139-93A4-399FFF2B35BE}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{AEC239E0-E973-4139-93A4-399FFF2B35BE}.Debug|x64.ActiveCfg = Debug|x64
+		{AEC239E0-E973-4139-93A4-399FFF2B35BE}.Debug|x64.Build.0 = Debug|x64
+		{AEC239E0-E973-4139-93A4-399FFF2B35BE}.Debug|x86.ActiveCfg = Debug|Win32
+		{AEC239E0-E973-4139-93A4-399FFF2B35BE}.Debug|x86.Build.0 = Debug|Win32
+		{AEC239E0-E973-4139-93A4-399FFF2B35BE}.Release|Any CPU.ActiveCfg = Release|Win32
+		{AEC239E0-E973-4139-93A4-399FFF2B35BE}.Release|x64.ActiveCfg = Release|x64
+		{AEC239E0-E973-4139-93A4-399FFF2B35BE}.Release|x64.Build.0 = Release|x64
+		{AEC239E0-E973-4139-93A4-399FFF2B35BE}.Release|x86.ActiveCfg = Release|Win32
+		{AEC239E0-E973-4139-93A4-399FFF2B35BE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
