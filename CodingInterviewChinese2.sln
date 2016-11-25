@@ -64,6 +64,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25_MergeSortedLists", "25_M
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26_SubstructureInTree", "26_SubstructureInTree\26_SubstructureInTree.vcxproj", "{D4B2BD6A-2BD9-47AD-AC60-4962FD670A6E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_MirrorOfBinaryTree", "27_MirrorOfBinaryTree\27_MirrorOfBinaryTree.vcxproj", "{2B6DDEAC-B618-4082-BACE-8BC1980417D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -366,6 +368,16 @@ Global
 		{D4B2BD6A-2BD9-47AD-AC60-4962FD670A6E}.Release|x64.Build.0 = Release|x64
 		{D4B2BD6A-2BD9-47AD-AC60-4962FD670A6E}.Release|x86.ActiveCfg = Release|Win32
 		{D4B2BD6A-2BD9-47AD-AC60-4962FD670A6E}.Release|x86.Build.0 = Release|Win32
+		{2B6DDEAC-B618-4082-BACE-8BC1980417D8}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{2B6DDEAC-B618-4082-BACE-8BC1980417D8}.Debug|x64.ActiveCfg = Debug|x64
+		{2B6DDEAC-B618-4082-BACE-8BC1980417D8}.Debug|x64.Build.0 = Debug|x64
+		{2B6DDEAC-B618-4082-BACE-8BC1980417D8}.Debug|x86.ActiveCfg = Debug|Win32
+		{2B6DDEAC-B618-4082-BACE-8BC1980417D8}.Debug|x86.Build.0 = Debug|Win32
+		{2B6DDEAC-B618-4082-BACE-8BC1980417D8}.Release|Any CPU.ActiveCfg = Release|Win32
+		{2B6DDEAC-B618-4082-BACE-8BC1980417D8}.Release|x64.ActiveCfg = Release|x64
+		{2B6DDEAC-B618-4082-BACE-8BC1980417D8}.Release|x64.Build.0 = Release|x64
+		{2B6DDEAC-B618-4082-BACE-8BC1980417D8}.Release|x86.ActiveCfg = Release|Win32
+		{2B6DDEAC-B618-4082-BACE-8BC1980417D8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
