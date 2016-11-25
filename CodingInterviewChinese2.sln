@@ -80,6 +80,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "32_02_PrintTreesInLines", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "32_03_PrintTreesInZigzag", "32_03_PrintTreesInZigzag\32_03_PrintTreesInZigzag.vcxproj", "{7E591532-C86D-4163-93AE-4F925DBFF0FC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "33_SquenceOfBST", "33_SquenceOfBST\33_SquenceOfBST.vcxproj", "{966FE247-8D7C-48A4-B35A-C17B45ED80C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -462,6 +464,16 @@ Global
 		{7E591532-C86D-4163-93AE-4F925DBFF0FC}.Release|x64.Build.0 = Release|x64
 		{7E591532-C86D-4163-93AE-4F925DBFF0FC}.Release|x86.ActiveCfg = Release|Win32
 		{7E591532-C86D-4163-93AE-4F925DBFF0FC}.Release|x86.Build.0 = Release|Win32
+		{966FE247-8D7C-48A4-B35A-C17B45ED80C4}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{966FE247-8D7C-48A4-B35A-C17B45ED80C4}.Debug|x64.ActiveCfg = Debug|x64
+		{966FE247-8D7C-48A4-B35A-C17B45ED80C4}.Debug|x64.Build.0 = Debug|x64
+		{966FE247-8D7C-48A4-B35A-C17B45ED80C4}.Debug|x86.ActiveCfg = Debug|Win32
+		{966FE247-8D7C-48A4-B35A-C17B45ED80C4}.Debug|x86.Build.0 = Debug|Win32
+		{966FE247-8D7C-48A4-B35A-C17B45ED80C4}.Release|Any CPU.ActiveCfg = Release|Win32
+		{966FE247-8D7C-48A4-B35A-C17B45ED80C4}.Release|x64.ActiveCfg = Release|x64
+		{966FE247-8D7C-48A4-B35A-C17B45ED80C4}.Release|x64.Build.0 = Release|x64
+		{966FE247-8D7C-48A4-B35A-C17B45ED80C4}.Release|x86.ActiveCfg = Release|Win32
+		{966FE247-8D7C-48A4-B35A-C17B45ED80C4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
