@@ -7,7 +7,7 @@
 
 void Reverse(char *pBegin, char *pEnd)
 {
-    if(pBegin == nullptrptr || pEnd == nullptrptr)
+    if(pBegin == nullptr || pEnd == nullptr)
         return;
 
     while(pBegin < pEnd)
