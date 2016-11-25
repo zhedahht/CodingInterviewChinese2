@@ -7,7 +7,7 @@
 // 题目：输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有
 // 奇数位于数组的前半部分，所有偶数位于数组的后半部分。
 
-#include "cstdio"
+#include <cstdio>
 
 void reorder(int *pData, unsigned int length, bool (*func)(int));
 bool isEven(int n);

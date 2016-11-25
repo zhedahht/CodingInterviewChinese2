@@ -9,7 +9,7 @@
 // 5是某栈的压栈序列，序列4、5、3、2、1是该压栈序列对应的一个弹出序列，但
 // 4、3、5、1、2就不可能是该压栈序列的弹出序列。
 
-#include "cstdio"
+#include <cstdio>
 #include <stack>
 
 bool IsPopOrder(const int* pPush, const int* pPop, int nLength)

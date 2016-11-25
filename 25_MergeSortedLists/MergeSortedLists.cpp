@@ -8,7 +8,7 @@
 // 照递增排序的。例如输入图3.11中的链表1和链表2，则合并之后的升序链表如链
 // 表3所示。
 
-#include "cstdio"
+#include <cstdio>
 #include "..\Utilities\List.h"
 
 ListNode* Merge(ListNode* pHead1, ListNode* pHead2)

@@ -9,7 +9,7 @@
 // 从头结点开始它们的值依次是1、2、3、4、5、6。这个链表的倒数第3个结点是
 // 值为4的结点。
 
-#include "cstdio"
+#include <cstdio>
 #include "..\Utilities\List.h"
 
 ListNode* FindKthToTail(ListNode* pListHead, unsigned int k)
