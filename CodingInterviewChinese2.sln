@@ -122,6 +122,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "51_InversePairs", "51_Inver
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "52_FirstCommonNodesInLists", "52_FirstCommonNodesInLists\52_FirstCommonNodesInLists.vcxproj", "{EBC35F33-D9B1-480A-813A-64278EBF3013}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "53_01_NumberOfK", "53_01_NumberOfK\53_01_NumberOfK.vcxproj", "{FB4B4B49-99A8-4EA3-8BF2-84F559B1E59A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -714,6 +716,16 @@ Global
 		{EBC35F33-D9B1-480A-813A-64278EBF3013}.Release|x64.Build.0 = Release|x64
 		{EBC35F33-D9B1-480A-813A-64278EBF3013}.Release|x86.ActiveCfg = Release|Win32
 		{EBC35F33-D9B1-480A-813A-64278EBF3013}.Release|x86.Build.0 = Release|Win32
+		{FB4B4B49-99A8-4EA3-8BF2-84F559B1E59A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{FB4B4B49-99A8-4EA3-8BF2-84F559B1E59A}.Debug|x64.ActiveCfg = Debug|x64
+		{FB4B4B49-99A8-4EA3-8BF2-84F559B1E59A}.Debug|x64.Build.0 = Debug|x64
+		{FB4B4B49-99A8-4EA3-8BF2-84F559B1E59A}.Debug|x86.ActiveCfg = Debug|Win32
+		{FB4B4B49-99A8-4EA3-8BF2-84F559B1E59A}.Debug|x86.Build.0 = Debug|Win32
+		{FB4B4B49-99A8-4EA3-8BF2-84F559B1E59A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{FB4B4B49-99A8-4EA3-8BF2-84F559B1E59A}.Release|x64.ActiveCfg = Release|x64
+		{FB4B4B49-99A8-4EA3-8BF2-84F559B1E59A}.Release|x64.Build.0 = Release|x64
+		{FB4B4B49-99A8-4EA3-8BF2-84F559B1E59A}.Release|x86.ActiveCfg = Release|Win32
+		{FB4B4B49-99A8-4EA3-8BF2-84F559B1E59A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
