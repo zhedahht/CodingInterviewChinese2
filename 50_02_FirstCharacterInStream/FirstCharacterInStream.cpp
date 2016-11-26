@@ -59,9 +59,9 @@ private:
 };
 
 // ====================²âÊÔ´úÂë====================
-void Test(char* testName, CharStatistics chars, char expected)
+void Test(const char* testName, CharStatistics chars, char expected)
 {
-    if(testName != NULL)
+    if(testName != nullptr)
         printf("%s begins: ", testName);
 
     if(chars.FirstAppearingOnce() == expected)
