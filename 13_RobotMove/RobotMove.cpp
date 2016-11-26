@@ -18,7 +18,7 @@ int getDigitSum(int number);
 int movingCount(int threshold, int rows, int cols)
 {
     bool *visited = new bool[rows * cols];
-    for (int i = 0; i < rows * cols; ++i)
+    for(int i = 0; i < rows * cols; ++i)
         visited[i] = false;
 
     int count = movingCountCore(threshold, rows, cols,
@@ -32,7 +32,7 @@ int movingCount(int threshold, int rows, int cols)
 int movingCountCore(int threshold, int rows, int cols, int row, int col, bool* visited)
 {
     int count = 0;
-    if (check(threshold, rows, cols, row, col, visited))
+    if(check(threshold, rows, cols, row, col, visited))
     {
         visited[row * cols + col] = true;
 
@@ -51,7 +51,7 @@ int movingCountCore(int threshold, int rows, int cols, int row, int col, bool* v
 
 bool check(int threshold, int rows, int cols, int row, int col, bool* visited)
 {
-    if (row >= 0 && row < rows && col >= 0 && col < cols
+    if(row >= 0 && row < rows && col >= 0 && col < cols
         && getDigitSum(row) + getDigitSum(col) <= threshold
         && !visited[row* cols + col])
         return true;
@@ -62,7 +62,7 @@ bool check(int threshold, int rows, int cols, int row, int col, bool* visited)
 int getDigitSum(int number)
 {
     int sum = 0;
-    while (number > 0)
+    while(number > 0)
     {
         sum += number % 10;
         number /= 10;
@@ -74,10 +74,10 @@ int getDigitSum(int number)
 // ====================≤‚ ‘¥˙¬Î====================
 void test(char* testName, int threshold, int rows, int cols, int expected)
 {
-    if (testName != nullptr)
+    if(testName != nullptr)
         printf("%s begins: ", testName);
 
-    if (movingCount(threshold, rows, cols) == expected)
+    if(movingCount(threshold, rows, cols) == expected)
         printf("Passed.\n");
     else
         printf("FAILED.\n");

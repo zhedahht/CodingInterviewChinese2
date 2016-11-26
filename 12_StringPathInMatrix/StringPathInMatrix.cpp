@@ -24,18 +24,18 @@ bool hasPathCore(const char* matrix, int rows, int cols, int row, int col, const
 
 bool hasPath(const char* matrix, int rows, int cols, const char* str)
 {
-    if (matrix == nullptr || rows < 1 || cols < 1 || str == nullptr)
+    if(matrix == nullptr || rows < 1 || cols < 1 || str == nullptr)
         return false;
 
     bool *visited = new bool[rows * cols];
     memset(visited, 0, rows * cols);
 
     int pathLength = 0;
-    for (int row = 0; row < rows; ++row)
+    for(int row = 0; row < rows; ++row)
     {
-        for (int col = 0; col < cols; ++col)
+        for(int col = 0; col < cols; ++col)
         {
-            if (hasPathCore(matrix, rows, cols, row, col, str,
+            if(hasPathCore(matrix, rows, cols, row, col, str,
                 pathLength, visited))
             {
                 return true;
@@ -50,11 +50,11 @@ bool hasPath(const char* matrix, int rows, int cols, const char* str)
 
 bool hasPathCore(const char* matrix, int rows, int cols, int row, int col, const char* str, int& pathLength, bool* visited)
 {
-    if (str[pathLength] == '\0')
+    if(str[pathLength] == '\0')
         return true;
 
     bool hasPath = false;
-    if (row >= 0 && row < rows && col >= 0 && col < cols
+    if(row >= 0 && row < rows && col >= 0 && col < cols
         && matrix[row * cols + col] == str[pathLength]
         && !visited[row * cols + col])
     {
@@ -70,7 +70,7 @@ bool hasPathCore(const char* matrix, int rows, int cols, int row, int col, const
             || hasPathCore(matrix, rows, cols, row + 1, col,
                 str, pathLength, visited);
 
-        if (!hasPath)
+        if(!hasPath)
         {
             --pathLength;
             visited[row * cols + col] = false;
@@ -83,10 +83,10 @@ bool hasPathCore(const char* matrix, int rows, int cols, int row, int col, const
 // ====================²âÊÔ´úÂë====================
 void Test(const char* testName, const char* matrix, int rows, int cols, const char* str, bool expected)
 {
-    if (testName != nullptr)
+    if(testName != nullptr)
         printf("%s begins: ", testName);
 
-    if (hasPath(matrix, rows, cols, str) == expected)
+    if(hasPath(matrix, rows, cols, str) == expected)
         printf("Passed.\n");
     else
         printf("FAILED.\n");
