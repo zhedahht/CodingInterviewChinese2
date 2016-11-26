@@ -4,12 +4,14 @@
 //==================================================================
 
 // 面试题3（二）：不修改数组找出重复的数字
-// 题目：在一个长度为n+1的数组里的所有数字都在1到n的范围内，所以数组中至少有一个数字是重复的。请找出数组中任意一个重复的数字，
-// 但不能修改输入的数组。例如，如果输入长度为7的数组{2, 3, 5, 4, 3, 2, 6, 7}，那么对应的输出是重复的数字2或者3。
+// 题目：在一个长度为n+1的数组里的所有数字都在1到n的范围内，所以数组中至
+// 少有一个数字是重复的。请找出数组中任意一个重复的数字，但不能修改输入的
+// 数组。例如，如果输入长度为8的数组{2, 3, 5, 4, 3, 2, 6, 7}，那么对应的
+// 输出是重复的数字2或者3。
 
 #include <iostream>
 
-int countRange(int* numbers, int length, int start, int end);
+int countRange(const int* numbers, int length, int start, int end);
 
 // 参数:
 //        numbers:     一个整数数组
@@ -17,13 +19,13 @@ int countRange(int* numbers, int length, int start, int end);
 // 返回值:             
 //        正数  - 输入有效，并且数组中存在重复的数字，返回值为重复的数字
 //        负数  - 输入无效，或者数组中没有重复的数字
-int getDuplication(int* numbers, int length)
+int getDuplication(const int* numbers, int length)
 {
     if(numbers == nullptr || length <= 0)
         return -1;
 
     int start = 1;
-    int end = length;
+    int end = length - 1;
     while(end >= start)
     {
         int middle = ((end - start) >> 1) + start;
@@ -44,7 +46,7 @@ int getDuplication(int* numbers, int length)
     return -1;
 }
 
-int countRange(int* numbers, int length, int start, int end)
+int countRange(const int* numbers, int length, int start, int end)
 {
     if(numbers == nullptr)
         return 0;
