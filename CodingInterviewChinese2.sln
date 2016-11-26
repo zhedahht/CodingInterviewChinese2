@@ -154,6 +154,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "60_DicesProbability", "60_D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "61_ContinousCards", "61_ContinousCards\61_ContinousCards.vcxproj", "{A82DDB97-1707-49EF-9828-6C83143DCDCB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "62_LastNumberInCircle", "62_LastNumberInCircle\62_LastNumberInCircle.vcxproj", "{10FBBE33-ACA7-4D0B-BD95-9CA126B00FAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -906,6 +908,16 @@ Global
 		{A82DDB97-1707-49EF-9828-6C83143DCDCB}.Release|x64.Build.0 = Release|x64
 		{A82DDB97-1707-49EF-9828-6C83143DCDCB}.Release|x86.ActiveCfg = Release|Win32
 		{A82DDB97-1707-49EF-9828-6C83143DCDCB}.Release|x86.Build.0 = Release|Win32
+		{10FBBE33-ACA7-4D0B-BD95-9CA126B00FAE}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{10FBBE33-ACA7-4D0B-BD95-9CA126B00FAE}.Debug|x64.ActiveCfg = Debug|x64
+		{10FBBE33-ACA7-4D0B-BD95-9CA126B00FAE}.Debug|x64.Build.0 = Debug|x64
+		{10FBBE33-ACA7-4D0B-BD95-9CA126B00FAE}.Debug|x86.ActiveCfg = Debug|Win32
+		{10FBBE33-ACA7-4D0B-BD95-9CA126B00FAE}.Debug|x86.Build.0 = Debug|Win32
+		{10FBBE33-ACA7-4D0B-BD95-9CA126B00FAE}.Release|Any CPU.ActiveCfg = Release|Win32
+		{10FBBE33-ACA7-4D0B-BD95-9CA126B00FAE}.Release|x64.ActiveCfg = Release|x64
+		{10FBBE33-ACA7-4D0B-BD95-9CA126B00FAE}.Release|x64.Build.0 = Release|x64
+		{10FBBE33-ACA7-4D0B-BD95-9CA126B00FAE}.Release|x86.ActiveCfg = Release|Win32
+		{10FBBE33-ACA7-4D0B-BD95-9CA126B00FAE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
