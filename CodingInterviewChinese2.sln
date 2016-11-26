@@ -128,6 +128,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "53_02_MissingNumber", "53_0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "53_03_IntegerIdenticalToIndex", "53_03_IntegerIdenticalToIndex\53_03_IntegerIdenticalToIndex.vcxproj", "{072FA154-EEE1-4477-BB18-08443767ABE8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "54_KthNodeInBST", "54_KthNodeInBST\54_KthNodeInBST.vcxproj", "{050F6A72-5004-42F6-8E1A-BA825C6C845B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -750,6 +752,16 @@ Global
 		{072FA154-EEE1-4477-BB18-08443767ABE8}.Release|x64.Build.0 = Release|x64
 		{072FA154-EEE1-4477-BB18-08443767ABE8}.Release|x86.ActiveCfg = Release|Win32
 		{072FA154-EEE1-4477-BB18-08443767ABE8}.Release|x86.Build.0 = Release|Win32
+		{050F6A72-5004-42F6-8E1A-BA825C6C845B}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{050F6A72-5004-42F6-8E1A-BA825C6C845B}.Debug|x64.ActiveCfg = Debug|x64
+		{050F6A72-5004-42F6-8E1A-BA825C6C845B}.Debug|x64.Build.0 = Debug|x64
+		{050F6A72-5004-42F6-8E1A-BA825C6C845B}.Debug|x86.ActiveCfg = Debug|Win32
+		{050F6A72-5004-42F6-8E1A-BA825C6C845B}.Debug|x86.Build.0 = Debug|Win32
+		{050F6A72-5004-42F6-8E1A-BA825C6C845B}.Release|Any CPU.ActiveCfg = Release|Win32
+		{050F6A72-5004-42F6-8E1A-BA825C6C845B}.Release|x64.ActiveCfg = Release|x64
+		{050F6A72-5004-42F6-8E1A-BA825C6C845B}.Release|x64.Build.0 = Release|x64
+		{050F6A72-5004-42F6-8E1A-BA825C6C845B}.Release|x86.ActiveCfg = Release|Win32
+		{050F6A72-5004-42F6-8E1A-BA825C6C845B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
