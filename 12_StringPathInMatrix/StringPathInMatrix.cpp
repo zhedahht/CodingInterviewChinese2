@@ -48,7 +48,8 @@ bool hasPath(const char* matrix, int rows, int cols, const char* str)
     return false;
 }
 
-bool hasPathCore(const char* matrix, int rows, int cols, int row, int col, const char* str, int& pathLength, bool* visited)
+bool hasPathCore(const char* matrix, int rows, int cols, int row,
+    int col, const char* str, int& pathLength, bool* visited)
 {
     if(str[pathLength] == '\0')
         return true;
@@ -239,6 +240,11 @@ void Test11()
     Test("Test11", (const char*) matrix, 1, 1, str, false);
 }
 
+void Test12()
+{
+    Test("Test12", nullptr, 0, 0, nullptr, false);
+}
+
 int main(int argc, char* argv[])
 {
     Test1();
@@ -252,6 +258,7 @@ int main(int argc, char* argv[])
     Test9();
     Test10();
     Test11();
+    Test12();
 
     return 0;
 }

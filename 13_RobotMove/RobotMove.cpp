@@ -17,6 +17,9 @@ int getDigitSum(int number);
 
 int movingCount(int threshold, int rows, int cols)
 {
+    if(threshold < 0 || rows <= 0 || cols <= 0)
+        return 0;
+
     bool *visited = new bool[rows * cols];
     for(int i = 0; i < rows * cols; ++i)
         visited[i] = false;
@@ -29,7 +32,8 @@ int movingCount(int threshold, int rows, int cols)
     return count;
 }
 
-int movingCountCore(int threshold, int rows, int cols, int row, int col, bool* visited)
+int movingCountCore(int threshold, int rows, int cols, int row,
+    int col, bool* visited)
 {
     int count = 0;
     if(check(threshold, rows, cols, row, col, visited))
@@ -49,7 +53,8 @@ int movingCountCore(int threshold, int rows, int cols, int row, int col, bool* v
     return count;
 }
 
-bool check(int threshold, int rows, int cols, int row, int col, bool* visited)
+bool check(int threshold, int rows, int cols, int row, int col,
+    bool* visited)
 {
     if(row >= 0 && row < rows && col >= 0 && col < cols
         && getDigitSum(row) + getDigitSum(col) <= threshold
@@ -125,10 +130,16 @@ void test7()
     test("Test7", 15, 1, 1, 1);
 }
 
-// 机器人不能进入任意一个方格
+// 方格只有一行一列
 void test8()
 {
-    test("Test8", -10, 10, 10, 0);
+    test("Test8", 0, 1, 1, 1);
+}
+
+// 机器人不能进入任意一个方格
+void test9()
+{
+    test("Test9", -10, 10, 10, 0);
 }
 
 int main(int agrc, char* argv[])
@@ -141,4 +152,7 @@ int main(int agrc, char* argv[])
     test6();
     test7();
     test8();
+    test9();
+
+    return 0;
 }
