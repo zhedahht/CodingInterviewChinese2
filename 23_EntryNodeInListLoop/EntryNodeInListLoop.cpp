@@ -41,7 +41,7 @@ ListNode* EntryNodeOfLoop(ListNode* pHead)
     if(meetingNode == nullptr)
         return nullptr;
 
-    // get the number of nodes in loop
+    // 得到环中结点的数目
     int nodesInLoop = 1;
     ListNode* pNode1 = meetingNode;
     while(pNode1->m_pNext != meetingNode)
@@ -50,12 +50,12 @@ ListNode* EntryNodeOfLoop(ListNode* pHead)
         ++nodesInLoop;
     }
 
-    // move pNode1
+    // 先移动pNode1，次数为环中结点的数目
     pNode1 = pHead;
     for(int i = 0; i < nodesInLoop; ++i)
         pNode1 = pNode1->m_pNext;
 
-    // move pNode1 and pNode2
+    // 再移动pNode1和pNode2
     ListNode* pNode2 = pHead;
     while(pNode1 != pNode2)
     {
