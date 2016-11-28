@@ -9,11 +9,11 @@
 
 #include <cstdio>
 
-void reorder(int *pData, unsigned int length, bool (*func)(int));
+void Reorder(int *pData, unsigned int length, bool (*func)(int));
 bool isEven(int n);
 
 // ====================方法一====================
-void reorderOddEven_1(int *pData, unsigned int length)
+void ReorderOddEven_1(int *pData, unsigned int length)
 {
     if(pData == nullptr || length == 0)
         return;
@@ -41,12 +41,12 @@ void reorderOddEven_1(int *pData, unsigned int length)
 }
 
 // ====================方法二====================
-void reorderOddEven_2(int *pData, unsigned int length)
+void ReorderOddEven_2(int *pData, unsigned int length)
 {
-    reorder(pData, length, isEven);
+    Reorder(pData, length, isEven);
 }
 
-void reorder(int *pData, unsigned int length, bool (*func)(int))
+void Reorder(int *pData, unsigned int length, bool (*func)(int))
 {
     if(pData == nullptr || length == 0)
         return;
@@ -103,12 +103,12 @@ void Test(char* testName, int numbers[], int length)
 
     printf("Test for solution 1:\n");
     PrintArray(numbers, length);
-    reorderOddEven_1(numbers, length);
+    ReorderOddEven_1(numbers, length);
     PrintArray(numbers, length);
 
     printf("Test for solution 2:\n");
     PrintArray(copy, length);
-    reorderOddEven_2(copy, length);
+    ReorderOddEven_2(copy, length);
     PrintArray(copy, length);
 
     delete[] copy;
