@@ -103,6 +103,8 @@ int main(int argc, char* argv[])
     Test("Test17", ".e1", false);
     Test("Test18", "e1", false);
     Test("Test19", "+.", false);
+    Test("Test20", "", false);
+    Test("Test21", nullptr, false);
 
     return 0;
 }
