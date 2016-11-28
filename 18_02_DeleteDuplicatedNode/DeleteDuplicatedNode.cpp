@@ -10,7 +10,7 @@
 #include <cstdio>
 #include "../Utilities/list.h"
 
-void deleteDuplication(ListNode** pHead)
+void DeleteDuplication(ListNode** pHead)
 {
     if(pHead == nullptr || *pHead == nullptr)
         return;
@@ -58,7 +58,7 @@ void Test(char* testName, ListNode** pHead, int* expectedValues, int expectedLen
     if(testName != nullptr)
         printf("%s begins: ", testName);
 
-    deleteDuplication(pHead);
+    DeleteDuplication(pHead);
 
     int index = 0;
     ListNode* pNode = *pHead;
