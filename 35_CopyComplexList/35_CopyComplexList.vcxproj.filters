@@ -18,7 +18,7 @@
     <ClCompile Include="ComplexList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CopyComplextList.cpp">
+    <ClCompile Include="CopyComplexList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
