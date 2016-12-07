@@ -5,24 +5,6 @@ All rights reserved.
 Distributed under the BSD license.
 (See accompanying file LICENSE.txt at
 https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 *******************************************************************/
 
 //==================================================================
