@@ -8,24 +8,24 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 *******************************************************************/
 
 //==================================================================
-// ¡¶½£Ö¸Offer¡ª¡ªÃûÆóÃæÊÔ¹Ù¾«½²µäĞÍ±à³ÌÌâ¡·´úÂë
-// ×÷Õß£ººÎº£ÌÎ
+// ã€Šå‰‘æŒ‡Offerâ€”â€”åä¼é¢è¯•å®˜ç²¾è®²å…¸å‹ç¼–ç¨‹é¢˜ã€‹ä»£ç 
+// ä½œè€…ï¼šä½•æµ·æ¶›
 //==================================================================
 
-// ÃæÊÔÌâ5£ºÌæ»»¿Õ¸ñ
-// ÌâÄ¿£ºÇëÊµÏÖÒ»¸öº¯Êı£¬°Ñ×Ö·û´®ÖĞµÄÃ¿¸ö¿Õ¸ñÌæ»»³É"%20"¡£ÀıÈçÊäÈë¡°We are happy.¡±£¬
-// ÔòÊä³ö¡°We%20are%20happy.¡±¡£
+// é¢è¯•é¢˜5ï¼šæ›¿æ¢ç©ºæ ¼
+// é¢˜ç›®ï¼šè¯·å®ç°ä¸€ä¸ªå‡½æ•°ï¼ŒæŠŠå­—ç¬¦ä¸²ä¸­çš„æ¯ä¸ªç©ºæ ¼æ›¿æ¢æˆ"%20"ã€‚ä¾‹å¦‚è¾“å…¥â€œWe are happy.â€ï¼Œ
+// åˆ™è¾“å‡ºâ€œWe%20are%20happy.â€ã€‚
 
 #include <cstdio>
 #include <cstring>
 
-/*length Îª×Ö·ûÊı×éstrµÄ×ÜÈİÁ¿£¬´óÓÚ»òµÈÓÚ×Ö·û´®strµÄÊµ¼Ê³¤¶È*/
+/*length ä¸ºå­—ç¬¦æ•°ç»„strçš„æ€»å®¹é‡ï¼Œå¤§äºæˆ–ç­‰äºå­—ç¬¦ä¸²strçš„å®é™…é•¿åº¦*/
 void ReplaceBlank(char str[], int length)
 {
     if(str == nullptr && length <= 0)
         return;
 
-    /*originalLength Îª×Ö·û´®strµÄÊµ¼Ê³¤¶È*/
+    /*originalLength ä¸ºå­—ç¬¦ä¸²strçš„å®é™…é•¿åº¦*/
     int originalLength = 0;
     int numberOfBlank = 0;
     int i = 0;
@@ -39,9 +39,9 @@ void ReplaceBlank(char str[], int length)
         ++ i;
     }
 
-    /*newLength Îª°Ñ¿Õ¸ñÌæ»»³É'%20'Ö®ºóµÄ³¤¶È*/
+    /*newLength ä¸ºæŠŠç©ºæ ¼æ›¿æ¢æˆ'%20'ä¹‹åçš„é•¿åº¦*/
     int newLength = originalLength + numberOfBlank * 2;
-    if(newLength > length)
+    if((newLength+1) > length)
         return;
 
     int indexOfOriginal = originalLength;
@@ -63,7 +63,7 @@ void ReplaceBlank(char str[], int length)
     }
 }
 
-// ====================²âÊÔ´úÂë====================
+// ====================æµ‹è¯•ä»£ç ====================
 void Test(char* testName, char str[], int length, char expected[])
 {
     if(testName != nullptr)
@@ -81,7 +81,7 @@ void Test(char* testName, char str[], int length, char expected[])
         printf("failed.\n");
 }
 
-// ¿Õ¸ñÔÚ¾ä×ÓÖĞ¼ä
+// ç©ºæ ¼åœ¨å¥å­ä¸­é—´
 void Test1()
 {
     const int length = 100;
@@ -90,7 +90,7 @@ void Test1()
     Test("Test1", str, length, "hello%20world");
 }
 
-// ¿Õ¸ñÔÚ¾ä×Ó¿ªÍ·
+// ç©ºæ ¼åœ¨å¥å­å¼€å¤´
 void Test2()
 {
     const int length = 100;
@@ -99,7 +99,7 @@ void Test2()
     Test("Test2", str, length, "%20helloworld");
 }
 
-// ¿Õ¸ñÔÚ¾ä×ÓÄ©Î²
+// ç©ºæ ¼åœ¨å¥å­æœ«å°¾
 void Test3()
 {
     const int length = 100;
@@ -108,7 +108,7 @@ void Test3()
     Test("Test3", str, length, "helloworld%20");
 }
 
-// Á¬ĞøÓĞÁ½¸ö¿Õ¸ñ
+// è¿ç»­æœ‰ä¸¤ä¸ªç©ºæ ¼
 void Test4()
 {
     const int length = 100;
@@ -117,13 +117,13 @@ void Test4()
     Test("Test4", str, length, "hello%20%20world");
 }
 
-// ´«Èënullptr
+// ä¼ å…¥nullptr
 void Test5()
 {
     Test("Test5", nullptr, 0, nullptr);
 }
 
-// ´«ÈëÄÚÈİÎª¿ÕµÄ×Ö·û´®
+// ä¼ å…¥å†…å®¹ä¸ºç©ºçš„å­—ç¬¦ä¸²
 void Test6()
 {
     const int length = 100;
@@ -132,7 +132,7 @@ void Test6()
     Test("Test6", str, length, "");
 }
 
-//´«ÈëÄÚÈİÎªÒ»¸ö¿Õ¸ñµÄ×Ö·û´®
+//ä¼ å…¥å†…å®¹ä¸ºä¸€ä¸ªç©ºæ ¼çš„å­—ç¬¦ä¸²
 void Test7()
 {
     const int length = 100;
@@ -141,7 +141,7 @@ void Test7()
     Test("Test7", str, length, "%20");
 }
 
-// ´«ÈëµÄ×Ö·û´®Ã»ÓĞ¿Õ¸ñ
+// ä¼ å…¥çš„å­—ç¬¦ä¸²æ²¡æœ‰ç©ºæ ¼
 void Test8()
 {
     const int length = 100;
@@ -150,7 +150,7 @@ void Test8()
     Test("Test8", str, length, "helloworld");
 }
 
-// ´«ÈëµÄ×Ö·û´®È«ÊÇ¿Õ¸ñ
+// ä¼ å…¥çš„å­—ç¬¦ä¸²å…¨æ˜¯ç©ºæ ¼
 void Test9()
 {
     const int length = 100;
