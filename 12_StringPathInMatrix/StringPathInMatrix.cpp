@@ -47,6 +47,7 @@ bool hasPath(const char* matrix, int rows, int cols, const char* str)
             if(hasPathCore(matrix, rows, cols, row, col, str,
                 pathLength, visited))
             {
+                delete[] visited;
                 return true;
             }
         }
