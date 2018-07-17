@@ -54,13 +54,11 @@ template<typename T> void CQueue<T>::appendTail(const T& element)
 
 template<typename T> T CQueue<T>::deleteHead()
 {
-    if(stack2.size()<= 0)
+    if(stack2.empty())
     {
-        while(stack1.size()>0)
+        while(!stack1.empty())
         {
-            T& data = stack1.top();
-            stack1.pop();
-            stack2.push(data);
+            stack2.push(stack1.top());
         }
     }
 
