@@ -59,6 +59,7 @@ template<typename T> T CQueue<T>::deleteHead()
         while(!stack1.empty())
         {
             stack2.push(stack1.top());
+            stack1.pop();
         }
     }
 
