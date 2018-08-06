@@ -55,7 +55,7 @@ BinaryTreeNode* ConstructCore
 
     // 在中序遍历中找到根结点的值
     int* rootInorder = startInorder;
-    while(rootInorder <= endInorder && *rootInorder != rootValue)
+    while(rootInorder < endInorder && *rootInorder != rootValue)
         ++ rootInorder;
 
     if(rootInorder == endInorder && *rootInorder != rootValue)
