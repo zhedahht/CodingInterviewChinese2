@@ -8,17 +8,17 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 *******************************************************************/
 
 //==================================================================
-// ¡¶½£Ö¸Offer¡ª¡ªÃûÆóÃæÊÔ¹Ù¾«½²µäÐÍ±à³ÌÌâ¡·´úÂë
-// ×÷Õß£ººÎº£ÌÎ
+// ã€Šå‰‘æŒ‡Offerâ€”â€”åä¼é¢è¯•å®˜ç²¾è®²å…¸åž‹ç¼–ç¨‹é¢˜ã€‹ä»£ç 
+// ä½œè€…ï¼šä½•æµ·æ¶›
 //==================================================================
 
-// ÃæÊÔÌâ12£º¾ØÕóÖÐµÄÂ·¾¶
-// ÌâÄ¿£ºÇëÉè¼ÆÒ»¸öº¯Êý£¬ÓÃÀ´ÅÐ¶ÏÔÚÒ»¸ö¾ØÕóÖÐÊÇ·ñ´æÔÚÒ»Ìõ°üº¬Ä³×Ö·û´®ËùÓÐ
-// ×Ö·ûµÄÂ·¾¶¡£Â·¾¶¿ÉÒÔ´Ó¾ØÕóÖÐÈÎÒâÒ»¸ñ¿ªÊ¼£¬Ã¿Ò»²½¿ÉÒÔÔÚ¾ØÕóÖÐÏò×ó¡¢ÓÒ¡¢
-// ÉÏ¡¢ÏÂÒÆ¶¯Ò»¸ñ¡£Èç¹ûÒ»ÌõÂ·¾¶¾­¹ýÁË¾ØÕóµÄÄ³Ò»¸ñ£¬ÄÇÃ´¸ÃÂ·¾¶²»ÄÜÔÙ´Î½øÈë
-// ¸Ã¸ñ×Ó¡£ÀýÈçÔÚÏÂÃæµÄ3¡Á4µÄ¾ØÕóÖÐ°üº¬Ò»Ìõ×Ö·û´®¡°bfce¡±µÄÂ·¾¶£¨Â·¾¶ÖÐµÄ×Ö
-// Ä¸ÓÃÏÂ»®Ïß±ê³ö£©¡£µ«¾ØÕóÖÐ²»°üº¬×Ö·û´®¡°abfb¡±µÄÂ·¾¶£¬ÒòÎª×Ö·û´®µÄµÚÒ»¸ö
-// ×Ö·ûbÕ¼¾ÝÁË¾ØÕóÖÐµÄµÚÒ»ÐÐµÚ¶þ¸ö¸ñ×ÓÖ®ºó£¬Â·¾¶²»ÄÜÔÙ´Î½øÈëÕâ¸ö¸ñ×Ó¡£
+// é¢è¯•é¢˜12ï¼šçŸ©é˜µä¸­çš„è·¯å¾„
+// é¢˜ç›®ï¼šè¯·è®¾è®¡ä¸€ä¸ªå‡½æ•°ï¼Œç”¨æ¥åˆ¤æ–­åœ¨ä¸€ä¸ªçŸ©é˜µä¸­æ˜¯å¦å­˜åœ¨ä¸€æ¡åŒ…å«æŸå­—ç¬¦ä¸²æ‰€æœ‰
+// å­—ç¬¦çš„è·¯å¾„ã€‚è·¯å¾„å¯ä»¥ä»ŽçŸ©é˜µä¸­ä»»æ„ä¸€æ ¼å¼€å§‹ï¼Œæ¯ä¸€æ­¥å¯ä»¥åœ¨çŸ©é˜µä¸­å‘å·¦ã€å³ã€
+// ä¸Šã€ä¸‹ç§»åŠ¨ä¸€æ ¼ã€‚å¦‚æžœä¸€æ¡è·¯å¾„ç»è¿‡äº†çŸ©é˜µçš„æŸä¸€æ ¼ï¼Œé‚£ä¹ˆè¯¥è·¯å¾„ä¸èƒ½å†æ¬¡è¿›å…¥
+// è¯¥æ ¼å­ã€‚ä¾‹å¦‚åœ¨ä¸‹é¢çš„3Ã—4çš„çŸ©é˜µä¸­åŒ…å«ä¸€æ¡å­—ç¬¦ä¸²â€œbfceâ€çš„è·¯å¾„ï¼ˆè·¯å¾„ä¸­çš„å­—
+// æ¯ç”¨ä¸‹åˆ’çº¿æ ‡å‡ºï¼‰ã€‚ä½†çŸ©é˜µä¸­ä¸åŒ…å«å­—ç¬¦ä¸²â€œabfbâ€çš„è·¯å¾„ï¼Œå› ä¸ºå­—ç¬¦ä¸²çš„ç¬¬ä¸€ä¸ª
+// å­—ç¬¦bå æ®äº†çŸ©é˜µä¸­çš„ç¬¬ä¸€è¡Œç¬¬äºŒä¸ªæ ¼å­ä¹‹åŽï¼Œè·¯å¾„ä¸èƒ½å†æ¬¡è¿›å…¥è¿™ä¸ªæ ¼å­ã€‚
 // A B T G
 // C F C S
 // J D E H
@@ -47,6 +47,7 @@ bool hasPath(const char* matrix, int rows, int cols, const char* str)
             if(hasPathCore(matrix, rows, cols, row, col, str,
                 pathLength, visited))
             {
+                delete[] visited;
                 return true;
             }
         }
@@ -90,7 +91,7 @@ bool hasPathCore(const char* matrix, int rows, int cols, int row,
     return hasPath;
 }
 
-// ====================²âÊÔ´úÂë====================
+// ====================æµ‹è¯•ä»£ç ====================
 void Test(const char* testName, const char* matrix, int rows, int cols, const char* str, bool expected)
 {
     if(testName != nullptr)
