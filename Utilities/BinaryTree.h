@@ -8,8 +8,8 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 *******************************************************************/
 
 //==================================================================
-// ¡¶½£Ö¸Offer¡ª¡ªÃûÆóÃæÊÔ¹Ù¾«½²µäĞÍ±à³ÌÌâ¡·´úÂë
-// ×÷Õß£ººÎº£ÌÎ
+// ã€Šå‰‘æŒ‡Offerâ€”â€”åä¼é¢è¯•å®˜ç²¾è®²å…¸å‹ç¼–ç¨‹é¢˜ã€‹ä»£ç 
+// ä½œè€…ï¼šä½•æµ·æ¶›
 //==================================================================
 
 #pragma once
@@ -25,4 +25,4 @@ __declspec( dllexport ) BinaryTreeNode* CreateBinaryTreeNode(int value);
 __declspec( dllexport ) void ConnectTreeNodes(BinaryTreeNode* pParent, BinaryTreeNode* pLeft, BinaryTreeNode* pRight);
 __declspec( dllexport ) void PrintTreeNode(const BinaryTreeNode* pNode);
 __declspec( dllexport ) void PrintTree(const BinaryTreeNode* pRoot);
-__declspec( dllexport ) void DestroyTree(BinaryTreeNode* pRoot);
+__declspec( dllexport ) void DestroyTree(BinaryTreeNode*& pRoot);
