@@ -8,14 +8,14 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 *******************************************************************/
 
 //==================================================================
-// ¡¶½£Ö¸Offer¡ª¡ªÃûÆóÃæÊÔ¹Ù¾«½²µäĞÍ±à³ÌÌâ¡·´úÂë
-// ×÷Õß£ººÎº£ÌÎ
+// ã€Šå‰‘æŒ‡Offerâ€”â€”åä¼é¢è¯•å®˜ç²¾è®²å…¸å‹ç¼–ç¨‹é¢˜ã€‹ä»£ç 
+// ä½œè€…ï¼šä½•æµ·æ¶›
 //==================================================================
 
-// ÃæÊÔÌâ45£º°ÑÊı×éÅÅ³É×îĞ¡µÄÊı
-// ÌâÄ¿£ºÊäÈëÒ»¸öÕıÕûÊıÊı×é£¬°ÑÊı×éÀïËùÓĞÊı×ÖÆ´½ÓÆğÀ´ÅÅ³ÉÒ»¸öÊı£¬´òÓ¡ÄÜÆ´
-// ½Ó³öµÄËùÓĞÊı×ÖÖĞ×îĞ¡µÄÒ»¸ö¡£ÀıÈçÊäÈëÊı×é{3, 32, 321}£¬Ôò´òÓ¡³öÕâ3¸öÊı
-// ×ÖÄÜÅÅ³ÉµÄ×îĞ¡Êı×Ö321323¡£
+// é¢è¯•é¢˜45ï¼šæŠŠæ•°ç»„æ’æˆæœ€å°çš„æ•°
+// é¢˜ç›®ï¼šè¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°æ•°ç»„ï¼ŒæŠŠæ•°ç»„é‡Œæ‰€æœ‰æ•°å­—æ‹¼æ¥èµ·æ¥æ’æˆä¸€ä¸ªæ•°ï¼Œæ‰“å°èƒ½æ‹¼
+// æ¥å‡ºçš„æ‰€æœ‰æ•°å­—ä¸­æœ€å°çš„ä¸€ä¸ªã€‚ä¾‹å¦‚è¾“å…¥æ•°ç»„{3, 32, 321}ï¼Œåˆ™æ‰“å°å‡ºè¿™3ä¸ªæ•°
+// å­—èƒ½æ’æˆçš„æœ€å°æ•°å­—321323ã€‚
 
 #include "cstdio"
 #include <string>
@@ -23,7 +23,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 
 int compare(const void* strNumber1, const void* strNumber2);
 
-// intĞÍÕûÊıÓÃÊ®½øÖÆ±íÊ¾×î¶àÖ»ÓĞ10Î»
+// intå‹æ•´æ•°ç”¨åè¿›åˆ¶è¡¨ç¤ºæœ€å¤šåªæœ‰10ä½
 const int g_MaxNumberLength = 10;
  
 char* g_StrCombine1 = new char[g_MaxNumberLength * 2 + 1];
@@ -34,7 +34,7 @@ void PrintMinNumber(const int* numbers, int length)
     if(numbers == nullptr || length <= 0)
         return;
  
-    char** strNumbers = (char**)(new int[length]);
+    char** strNumbers = (char**)(new char*[length]);
     for(int i = 0; i < length; ++i)
     {
         strNumbers[i] = new char[g_MaxNumberLength + 1];
@@ -52,9 +52,9 @@ void PrintMinNumber(const int* numbers, int length)
     delete[] strNumbers;
 }
  
-// Èç¹û[strNumber1][strNumber2] > [strNumber2][strNumber1], ·µ»ØÖµ´óÓÚ0
-// Èç¹û[strNumber1][strNumber2] = [strNumber2][strNumber1], ·µ»ØÖµµÈÓÚ0
-// Èç¹û[strNumber1][strNumber2] < [strNumber2][strNumber1], ·µ»ØÖµĞ¡ÓÚ0
+// å¦‚æœ[strNumber1][strNumber2] > [strNumber2][strNumber1], è¿”å›å€¼å¤§äº0
+// å¦‚æœ[strNumber1][strNumber2] = [strNumber2][strNumber1], è¿”å›å€¼ç­‰äº0
+// å¦‚æœ[strNumber1][strNumber2] < [strNumber2][strNumber1], è¿”å›å€¼å°äº0
 int compare(const void* strNumber1, const void* strNumber2)
 {
     // [strNumber1][strNumber2]
@@ -68,7 +68,7 @@ int compare(const void* strNumber1, const void* strNumber2)
     return strcmp(g_StrCombine1, g_StrCombine2);
 }
 
-// ====================²âÊÔ´úÂë====================
+// ====================æµ‹è¯•ä»£ç ====================
 void Test(const char* testName, int* numbers, int length, const char* expectedResult)
 {
     if(testName != nullptr)
@@ -107,7 +107,7 @@ void Test4()
     Test("Test4", numbers, sizeof(numbers)/sizeof(int), "111111");
 }
 
-// Êı×éÖĞÖ»ÓĞÒ»¸öÊı×Ö
+// æ•°ç»„ä¸­åªæœ‰ä¸€ä¸ªæ•°å­—
 void Test5()
 {
     int numbers[] = {321};
