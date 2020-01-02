@@ -41,7 +41,7 @@ int Partition(int data[], int length, int start, int end)
     int small = start - 1;
     for(index = start; index < end; ++ index)
     {
-        if(data[index] < data[end])
+        if(data[index] < data[end] || (data[index] == data[end] && rand() % 2 == 0))
         {
             ++ small;
             if(small != index)
